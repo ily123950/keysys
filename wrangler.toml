@@ -1,0 +1,14 @@
+name = "key-system-worker"
+main = "index.js"
+compatibility_date = "2024-01-01"
+
+# Выбери режим деплоя
+[env.production]
+vars = { 
+  API_SECRET = "YOUR_SECRET_KEY"  # Дублируем секрет здесь (опционально)
+}
+
+# Если используешь Cloudflare KV (для хранения ключей)
+# [kv_namespaces]
+# binding = "KEY_STORE"
+# id = "your-kv-id"
