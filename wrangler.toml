@@ -4,9 +4,9 @@ compatibility_date = "2024-01-01"
 
 # Выбери режим деплоя
 [env.production]
-vars = { 
-  API_SECRET = "vernamontop"  # Дублируем секрет здесь (опционально)
-}
+
+# Дублируем секрет здесь (опционально)
+vars = { API_SECRET = "vernamontop" }
 
 # Если используешь Cloudflare KV (для хранения ключей)
 # [kv_namespaces]
